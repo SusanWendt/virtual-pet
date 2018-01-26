@@ -24,7 +24,7 @@ public class VirtualPetApp {
 		String optionEntered;
 		do {
 			System.out.println(
-					petName + "'s current status: hunger=" + myPet.getHunger() + "/10, thirst=" + myPet.getThrist()
+					petName + "'s current status: hunger=" + myPet.getHunger() + "/10, thirst=" + myPet.getThirst()
 							+ "/10, bathroom=" + myPet.getBathroom() + "/10, and energy=" + myPet.getEnergy() + "/10.");
 			System.out.println("What would you like to do with " + petName + "?");
 			System.out.println(

@@ -19,4 +19,27 @@ public class VirtualPetTest {
 		int thirst = underTest.getThirst();
 		Assert.assertEquals(1, thirst);
 	}
+
+	@Test
+	public void shouldDecreaseBathroomBy4() {
+		VirtualPet underTest = new VirtualPet(5, 5, 5, 5);
+		underTest.letOut(4);
+		int bathroom = underTest.getBathroom();
+		Assert.assertEquals(1, bathroom);
+	}
+
+	@Test
+	public void shouldDecreaseEnergyBy4() {
+		VirtualPet underTest = new VirtualPet(5, 5, 5, 5);
+		underTest.play(4);
+		int energy = underTest.getEnergy();
+		Assert.assertEquals(1, energy);
+	}
+	@Test
+	public void shouldIncreaseHungerBy1() {
+		VirtualPet underTest = new VirtualPet(5, 5, 5, 5);
+		underTest.tick();
+		int hunger = underTest.getHunger();
+		Assert.assertEquals(6, hunger);
+	}
 }

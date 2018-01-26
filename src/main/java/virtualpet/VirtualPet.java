@@ -26,7 +26,7 @@ public class VirtualPet {
 		return hunger;
 	}
 
-	public int getThrist() {
+	public int getThirst() {
 		return thirst;
 	}
 
