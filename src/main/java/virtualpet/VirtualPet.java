@@ -69,4 +69,11 @@ public class VirtualPet {
 				energy -= 0;
 			}
 	}
+		public void tick() {
+			hunger += 1;
+			thirst += 1;
+			bathroom += 1;
+			energy +=1;
+			
+		}
 }
