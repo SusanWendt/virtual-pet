@@ -12,7 +12,7 @@ public class VirtualPetApp {
 
 		Scanner input = new Scanner(System.in);
 
-		VirtualPet myPet = new VirtualPet(5, 5, 5, 5); // order is important
+		VirtualPet myPet = new VirtualPet(5, 5, 5, 5);
 
 		System.out.println(
 				"Welcome to SoozaPalooza's BitBuddies, your virtual pet emporium! Please give your pet a name:");

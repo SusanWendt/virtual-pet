@@ -5,12 +5,13 @@ public class VirtualPet {
 	// 2) Create at least three instance variables (aka attributes aka properties
 	// aka fields).
 	// 3) Create at least three methods (messages you send to your pet).
-	
+
 	// Instance Data
 	private int hunger;
 	private int thirst;
 	private int bathroom;
 	private int energy;
+
 	// Constructor
 	public VirtualPet(int hunger, int thirst, int bathroom, int energy) {
 		this.hunger = hunger;
@@ -18,6 +19,7 @@ public class VirtualPet {
 		this.bathroom = bathroom;
 		this.energy = energy;
 	}
+
 	// Accessor Method --> gives public user ability to access method for private
 	// data
 	public int getHunger() {
@@ -35,6 +37,7 @@ public class VirtualPet {
 	public int getEnergy() {
 		return energy;
 	}
+
 	// Modifier Method
 	public void feed(int amountToFeed) {
 		// hunger = hunger - amountToFeed; AKA below line
@@ -44,6 +47,7 @@ public class VirtualPet {
 			hunger -= 0;
 		}
 	}
+
 	public void water(int amountToWater) {
 		if (amountToWater > 0) {
 			thirst -= amountToWater;
@@ -51,6 +55,7 @@ public class VirtualPet {
 			thirst -= 0;
 		}
 	}
+
 	public void letOut(int amountToBathroom) {
 		if (amountToBathroom > 0) {
 			bathroom -= amountToBathroom;
@@ -58,6 +63,7 @@ public class VirtualPet {
 			bathroom -= 0;
 		}
 	}
+
 	public void play(int amountToEnergy) {
 		if (amountToEnergy > 0) {
 			energy -= amountToEnergy;
@@ -65,6 +71,7 @@ public class VirtualPet {
 			energy -= 0;
 		}
 	}
+
 	public void tick() {
 		hunger += 1;
 		thirst += 1;
