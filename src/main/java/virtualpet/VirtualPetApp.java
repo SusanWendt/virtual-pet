@@ -19,8 +19,6 @@ public class VirtualPetApp {
 		String petName = input.nextLine();
 		System.out.println("Your pet is named " + petName + ".");
 
-		// for (int i = 0; i < 2; i++) {
-
 		String optionEntered;
 		do {
 			System.out.println(
@@ -33,13 +31,11 @@ public class VirtualPetApp {
 
 			if (optionEntered.equals("1")) {
 				myPet.feed(4);
-				System.out
-						.println("You have chosen to feed " + petName + ". " + petName + "'s hunger decreased.");
+				System.out.println("You have chosen to feed " + petName + ". " + petName + "'s hunger decreased.");
 
 			} else if (optionEntered.equals("2")) {
 				myPet.water(4);
-				System.out.println(
-						"You have chosen to water " + petName + ". " + petName + "'s thirst decreased.");
+				System.out.println("You have chosen to water " + petName + ". " + petName + "'s thirst decreased.");
 
 			} else if (optionEntered.equals("3")) {
 				myPet.letOut(4);
@@ -48,8 +44,7 @@ public class VirtualPetApp {
 
 			} else if (optionEntered.equals("4")) {
 				myPet.play(4);
-				System.out.println(
-						"You have chosen to play with " + petName + ". " + petName + "'s energy decreased.");
+				System.out.println("You have chosen to play with " + petName + ". " + petName + "'s energy decreased.");
 			}
 			myPet.tick();
 			System.out.println("One hour has passed. " + petName + "'s needs have changed.");
