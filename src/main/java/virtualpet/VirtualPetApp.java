@@ -34,12 +34,12 @@ public class VirtualPetApp {
 			if (optionEntered.equals("1")) {
 				myPet.feed(4);
 				System.out
-						.println("You have chosen to feed " + petName + ". " + petName + "'s hunger decreased by one.");
+						.println("You have chosen to feed " + petName + ". " + petName + "'s hunger decreased.");
 
 			} else if (optionEntered.equals("2")) {
 				myPet.water(4);
 				System.out.println(
-						"You have chosen to water " + petName + ". " + petName + "'s thirst decreased by one.");
+						"You have chosen to water " + petName + ". " + petName + "'s thirst decreased.");
 
 			} else if (optionEntered.equals("3")) {
 				myPet.letOut(4);
@@ -49,7 +49,7 @@ public class VirtualPetApp {
 			} else if (optionEntered.equals("4")) {
 				myPet.play(4);
 				System.out.println(
-						"You have chosen to play with " + petName + ". " + petName + "'s energy decreased by one.");
+						"You have chosen to play with " + petName + ". " + petName + "'s energy decreased.");
 			}
 			myPet.tick();
 			System.out.println("One hour has passed. " + petName + "'s needs have changed.");

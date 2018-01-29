@@ -20,8 +20,7 @@ public class VirtualPet {
 		this.energy = energy;
 	}
 
-	// Accessor method --> gives public user ability to access method for private
-	// data
+	// Accessor method --> gives public user ability to access method for private data
 	public int getHunger() {
 		return hunger;
 	}
@@ -41,10 +40,10 @@ public class VirtualPet {
 	// Modifier Method
 	public void feed(int amountToFeed) {
 		// hunger = hunger - amountToFeed; AKA below line
-		if (hunger >= amountToFeed) {
+		if (amountToFeed > 0) {
 			hunger -= amountToFeed;
 		} else {
-			hunger -= hunger;
+			hunger -= 0;
 		}
 	}
 
