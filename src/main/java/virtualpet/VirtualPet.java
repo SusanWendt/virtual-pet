@@ -2,8 +2,7 @@ package virtualpet;
 
 public class VirtualPet {
 	// 1) Create a tick() method that represents the passage of time.
-	// 2) Create at least three instance variables (aka attributes aka properties
-	// aka fields).
+	// 2) Create at least three instance variables (aka attributes)
 	// 3) Create at least three methods (messages you send to your pet).
 
 	// Instance Data
@@ -20,8 +19,7 @@ public class VirtualPet {
 		this.energy = energy;
 	}
 
-	// Accessor Method --> gives public user ability to access method for private
-	// data
+	// Accessor Method: gives public user ability to access method for private data
 	public int getHunger() {
 		return hunger;
 	}
@@ -40,36 +38,19 @@ public class VirtualPet {
 
 	// Modifier Method
 	public void feed(int amountToFeed) {
-		// hunger = hunger - amountToFeed; AKA below line
-		if (amountToFeed > 0) {
-			hunger -= amountToFeed;
-		} else {
-			hunger -= 0;
-		}
+		hunger -= amountToFeed;
 	}
 
 	public void water(int amountToWater) {
-		if (amountToWater > 0) {
-			thirst -= amountToWater;
-		} else {
-			thirst -= 0;
-		}
+		thirst -= amountToWater;
 	}
 
 	public void letOut(int amountToBathroom) {
-		if (amountToBathroom > 0) {
-			bathroom -= amountToBathroom;
-		} else {
-			bathroom -= 0;
-		}
+		bathroom -= amountToBathroom;
 	}
 
 	public void play(int amountToEnergy) {
-		if (amountToEnergy > 0) {
-			energy -= amountToEnergy;
-		} else {
-			energy -= 0;
-		}
+		energy -= amountToEnergy;
 	}
 
 	public void tick() {
